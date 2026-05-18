@@ -1,0 +1,117 @@
+.process {
+  background-color: #EFEFED;
+  padding: 100px 48px;
+}
+
+.process__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.process__label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-body);
+  margin-bottom: 12px;
+}
+
+.process__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-bottom: 64px;
+}
+
+.process__heading em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.process__timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+}
+
+.process__timeline::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  right: calc(20% - 36px);
+  height: 1px;
+  background-color: var(--brown);
+}
+
+.process__step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 12px;
+}
+
+.process__circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #EFEFED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 28px;
+}
+
+.process__step-title {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.process__step-body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+@media (max-width: 900px) {
+  .process__timeline {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 48px;
+  }
+
+  .process__timeline::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .process {
+    padding: 64px 20px;
+  }
+
+  .process__timeline {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .process__step {
+    align-items: flex-start;
+  }
+}
