@@ -45,7 +45,8 @@ export default function Footer() {
       <div className="footer__bottom">
         <p className="footer__copy">© 2026 Alrich Studio. All rights reserved.</p>
         <button className="footer__back-top" onClick={scrollToTop}>
-          Back to top &uarr;
+          Back to top
+          <span className="footer__back-top-icon">&#8593;</span>
         </button>
       </div>
     </footer>
