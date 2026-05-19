@@ -8,6 +8,9 @@ import heroImg from '/ALRICH/images/Main_hero_image.png'
 import interiorImg from '/ALRICH/images/interier.png'
 import backImg from '/ALRICH/images/back.png'
 import SideImg from '/ALRICH/images/side_photo.png'
+import homeicon from '/ALRICH/images/icons/mi_home.png'
+import interior from '/ALRICH/images/icons/Vector.png'
+import visualizationIcon from '/ALRICH/images/icons/cil_3d.png'
 
 export default function HomePage() {
   return (
@@ -71,19 +74,19 @@ export default function HomePage() {
           <div className="services__grid">
             <ServiceCard
               number="01"
-              icon={null}
+              icon={homeicon}
               title="Architecture"
               description="New-build houses, additions and renovations. Concept through construction administration, with measured drawings and a clear, buildable detail set."
             />
             <ServiceCard
               number="02"
-              icon={null}
+              icon={interior}
               title="Interior Design"
               description="Spatial planning, joinery, fixtures and material palettes coordinated with the architecture so the inside and outside agree on the same project."
             />
             <ServiceCard
               number="03"
-              icon={null}
+              icon={visualizationIcon}
               title="3D Visualizations"
               description="Photoreal renders and walkthroughs produced from our working models useful for early client decisions and planning submissions alike."
             />
