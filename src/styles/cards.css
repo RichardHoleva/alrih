@@ -1,0 +1,206 @@
+/* ============================================================
+   CARDS
+   Jump to:
+     1. Project Card  — line 9
+     2. Service Card  — line 67
+     3. Review Card   — line 118
+   ============================================================ */
+
+
+/* ============================================================
+   1. PROJECT CARD
+   ============================================================ */
+
+.project-card {
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-card__image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.04);
+}
+
+.project-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.project-card__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-body);
+  margin-bottom: 6px;
+}
+
+.project-card__title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.project-card__arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(26, 26, 24, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  flex-shrink: 0;
+  transition: background-color 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.project-card:hover .project-card__arrow {
+  border-color: rgba(26, 26, 24, 0.5);
+}
+
+
+/* ============================================================
+   2. SERVICE CARD
+   ============================================================ */
+
+.service-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 32px 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-card__number {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--brown);
+  margin-bottom: 24px;
+}
+
+.service-card__icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.service-card__icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+.service-card__body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+
+/* ============================================================
+   3. REVIEW CARD
+   ============================================================ */
+
+.review-card {
+  background-color: #fff;
+  width: 356px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.review-card__star {
+  font-size: 16px;
+  color: var(--brown);
+}
+
+.review-card__quote {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-body);
+  flex: 1;
+}
+
+.review-card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.review-card__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.review-card__name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.review-card__project {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-body);
+  margin-top: 2px;
+}

@@ -1,39 +1,39 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const navLinks = [
-  { label: 'Home',     href: '#home' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'About',    href: '#about' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'Home',     href: '/' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'About',    href: '/about' },
+  { label: 'Contact',  href: '/contact' },
 ]
 
 export default function Navbar() {
-  const [menuOpen,   setMenuOpen]   = useState(false)
-  const [activeLink, setActiveLink] = useState('Home')
-  const [lang,       setLang]       = useState('EN')
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [lang,     setLang]     = useState('EN')
+  const location = useLocation()
 
   return (
     <nav className="navbar">
       <div className="navbar__inner">
 
-        <a href="/" className="navbar__logo">ALRICH<a className='navbar_logo_dot'>.</a></a>
+        <Link to="/" className="navbar__logo">ALRICH<span className="navbar_logo_dot">.</span></Link>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
-                className={`navbar__link ${activeLink === link.label ? 'navbar__link--active' : ''}`}
-                onClick={() => { setActiveLink(link.label); setMenuOpen(false) }}
+              <Link
+                to={link.href}
+                className={`navbar__link ${location.pathname === link.href ? 'navbar__link--active' : ''}`}
+                onClick={() => setMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="navbar__right">
-
           <div className="navbar__lang">
             <button
               className={`navbar__lang-btn ${lang === 'SK' ? 'navbar__lang-btn--active' : ''}`}
@@ -59,8 +59,8 @@ export default function Navbar() {
             <span className="navbar__burger-line" />
             <span className="navbar__burger-line" />
           </button>
-
         </div>
+
       </div>
     </nav>
   )

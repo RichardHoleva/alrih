@@ -5,6 +5,9 @@ import ServiceCard from '../components/ServiceCard'
 import ReviewCard from '../components/ReviewCard'
 import Footer from '../components/Footer'
 import heroImg from '/ALRICH/images/Main_hero_image.png'
+import interiorImg from '/ALRICH/images/interier.png'
+import backImg from '/ALRICH/images/back.png'
+import SideImg from '/ALRICH/images/side_photo.png'
 
 export default function HomePage() {
   return (
@@ -47,9 +50,9 @@ export default function HomePage() {
             <button className="featured__view-all">View all &rarr;</button>
           </div>
           <div className="featured__grid">
-            <ProjectCard category="Cottage" year="2024" title="Family Cottage" image={heroImg} />
-            <ProjectCard category="Interior" year="2024" title="Family House" image={heroImg} />
-            <ProjectCard category="Exterior" year="2024" title="Family House" image={heroImg} />
+            <ProjectCard category="Cottage" year="2024" title="Family Cottage" image={SideImg} />
+            <ProjectCard category="Interior" year="2024" title="Family House" image={interiorImg} />
+            <ProjectCard category="Exterior" year="2024" title="Family House" image={backImg} />
           </div>
         </div>
       </section>
