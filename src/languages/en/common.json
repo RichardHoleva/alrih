@@ -14,7 +14,9 @@
     "copyright": "© 2026 Alrih Studio. All rights reserved."
   },
   "hero": {
-    "heading": "Spaces designed to live well in"
+    "headingPre": "Spaces designed",
+    "headingEm": "to live",
+    "headingSuf": "well in"
   },
   "success": {
     "title": "Success",

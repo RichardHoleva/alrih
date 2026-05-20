@@ -20,7 +20,9 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero__overlay" ref={textRef}>
-        <h1 className="hero__heading">{t('hero.heading')}</h1>
+        <h1 className="hero__heading">
+          {t('hero.headingPre')} <em>{t('hero.headingEm')}</em> {t('hero.headingSuf')}
+        </h1>
       </div>
       <div className="hero__image-wrap" ref={imageRef}>
         <img src={heroImg} alt="ALRIH architecture project" className="hero__image" />

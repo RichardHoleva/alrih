@@ -4,8 +4,8 @@
     "headingPre": "Malý",
     "headingEm1": "tím",
     "headingMid": "s",
-    "headingEm2": "citlivým",
-    "headingSuf": "pohľadom.",
+    "headingEm2": "citom pre",
+    "headingSuf": "dizajn.",
     "body": "Alrih je malé architektonické a interiérové štúdio so sídlom na Slovensku. S klientmi úzko spolupracujeme od prvej skice až po finálne odovzdanie, spájajúc technickú presnosť so skutočnou starostlivosťou o to, ako sa priestory cítia na bývanie."
   },
   "team": {
@@ -21,7 +21,7 @@
       "bio": "Miroslav je zakladajúci architekt Alrih s rokmi skúseností v oblasti rezidenčného a verejného staviteľstva. Riadi technickú stránku každého projektu – od plánovania a povolení po stavebný dozor – a dbá na to, aby bol každý návrh nielen krásny, ale aj realizovateľný."
     },
     "nina": {
-      "role": "Partnerka · Interiérová dizajnérka",
+      "role": "Pracovníčka · Interiérová dizajnérka",
       "bio": "Nina vedie interiérový dizajn a 3D vizualizácie v Alrih. Premieňa priestory prostredníctvom premyslených materiálových riešení, svetla a detailu a dáva klientom jasnú predstavu o ich budúcom domove ešte pred postavením prvej steny."
     }
   },
@@ -29,9 +29,9 @@
     "label": "Náš príbeh",
     "headingPre": "Založené v roku",
     "headingEm1": "2018",
-    "headingMid": "na jednoduchej myšlienke, že dobré dizajn zlepšuje každodenný",
+    "headingMid": "na jednoduchej myšlienke, dobrý dizajn zlepšuje ",
     "headingEm2": "život.",
-    "body1": "Alrih vznikol s presvedčením, že dobré dizajn by mal byť dostupný, úprimný a trvalý.",
+    "body1": "Alrih vznikol s presvedčením, že dobrý dizajn by mal byť dostupný, úprimný a trvalý.",
     "body2": "Nie sme veľká agentúra. Každý rok preberáme malý počet projektov, aby sme mohli každému klientovi venovať pozornosť, ktorú jeho domov zaslúži.",
     "body3": "Každý projekt začína počúvaním a končí priestorom, ktorý sa cíti presne správne."
   },
@@ -40,7 +40,7 @@
     "headingEm": "Náš",
     "headingText": "proces",
     "steps": [
-      { "step": "Krok jeden", "title": "Brief a počúvanie",         "body": "Stretneme sa na mieste a preberieme vašu víziu, rozpočet a harmonogram. Žiadne predpoklady, len otázky." },
+      { "step": "Krok jeden", "title": "Stručne a jasne",         "body": "Stretneme sa na mieste a preberieme vašu víziu, rozpočet a harmonogram. Žiadne predpoklady, len otázky." },
       { "step": "Krok dva",   "title": "Koncept a skicovanie",      "body": "Na základe toho, čo sme počuli, vypracujeme dva alebo tri smery a vrátime sa na úprimnú spätnú väzbu." },
       { "step": "Krok tri",   "title": "Vývoj dizajnu",             "body": "Zvolený smer je plne rozpracovaný. Materiály, svetlo a dispozícia sú finalizované spoločne." },
       { "step": "Krok štyri", "title": "Realizácia a dohľad",       "body": "Pracujeme s overenými dodávateľmi a pravidelne navštevujeme stavenisko, aby sme zaistili realizáciu podľa projektu." },

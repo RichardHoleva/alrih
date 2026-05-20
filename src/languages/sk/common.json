@@ -14,7 +14,9 @@
     "copyright": "© 2026 Alrih Studio. Všetky práva vyhradené."
   },
   "hero": {
-    "heading": "Priestory navrhnuté pre dobrý život"
+    "headingPre": "Priestory",
+    "headingEm": "pre dobrý",
+    "headingSuf": "život"
   },
   "success": {
     "title": "Úspech",

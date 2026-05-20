@@ -7,8 +7,10 @@ import { PROJECTS } from '../data/projects'
 
 export default function DetailedPage() {
   const { id } = useParams()
-  const { t } = useTranslation('detailed')
+  const { t, i18n } = useTranslation('detailed')
   const project = PROJECTS.find(p => p.id === Number(id))
+  const sk = i18n.language === 'sk'
+  const loc = (en, skVal) => sk && skVal != null ? skVal : en
 
   if (!project) {
     return (
@@ -90,7 +92,7 @@ export default function DetailedPage() {
                   <img src={item.image} alt={item.caption} className="detail-gallery__img" />
                   <p className="detail-gallery__caption">
                     <span className="detail-gallery__caption-num">{String(i + 1).padStart(2, '0')}</span>
-                    {item.caption}
+                    {loc(item.caption, item.caption_sk)}
                   </p>
                 </div>
               ))}
@@ -103,7 +105,7 @@ export default function DetailedPage() {
                   <img src={project.gallery[2].image} alt={project.gallery[2].caption} className="detail-gallery__img" />
                   <p className="detail-gallery__caption">
                     <span className="detail-gallery__caption-num">03</span>
-                    {project.gallery[2].caption}
+                    {loc(project.gallery[2].caption, project.gallery[2].caption_sk)}
                   </p>
                 </div>
               </div>
@@ -118,12 +120,14 @@ export default function DetailedPage() {
           <Reveal>
             <div className="detail-about__left">
               <p className="detail-about__label">{t('about.label')}</p>
-              <h2 className="detail-about__heading">{project.aboutHeading}</h2>
+              <h2 className="detail-about__heading">
+                {loc(project.aboutHeadingPre, project.aboutHeadingPre_sk)}<em>{loc(project.aboutHeadingEm, project.aboutHeadingEm_sk)}</em>
+              </h2>
             </div>
           </Reveal>
           <Reveal delay={120}>
             <div className="detail-about__right">
-              {project.aboutBody.map((para, i) => (
+              {loc(project.aboutBody, project.aboutBody_sk).map((para, i) => (
                 <p key={i} className={`detail-about__body${i === 0 ? ' detail-about__body--dropcap' : ''}`}>
                   {para}
                 </p>
@@ -138,12 +142,12 @@ export default function DetailedPage() {
         <section className="detail-quote">
           <div className="detail-quote__inner">
             <span className="detail-quote__marks">"</span>
-            <blockquote className="detail-quote__text">{project.quote.text}</blockquote>
+            <blockquote className="detail-quote__text">{loc(project.quote.text, project.quote_sk?.text)}</blockquote>
             <div className="detail-quote__author">
               <div className="detail-quote__avatar">{project.quote.initials}</div>
               <div>
                 <p className="detail-quote__name">{project.quote.author}</p>
-                <p className="detail-quote__project">{project.quote.project}</p>
+                <p className="detail-quote__project">{loc(project.quote.project, project.quote_sk?.project)}</p>
               </div>
             </div>
           </div>

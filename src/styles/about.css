@@ -198,7 +198,7 @@
 
 .about-story__heading {
   font-family: var(--font-heading);
-  font-size: clamp(28px, 3.2vw, 48px);
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;

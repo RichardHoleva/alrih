@@ -36,7 +36,7 @@
     "headingEm": "Náš",
     "headingText": "Proces",
     "steps": [
-      { "title": "Brief",       "body": "Dlhé prvé stretnutie na mieste alebo pri káve. Program, rozpočet, obmedzenia." },
+      { "title": "Predstava",       "body": "Dlhé prvé stretnutie na mieste alebo pri káve. Program, rozpočet, obmedzenia." },
       { "title": "Koncept",     "body": "Dva alebo tri smery, v pôdoryse a reze, predložené na úprimnú spätnú väzbu." },
       { "title": "Dizajn",      "body": "Zvolený smer je rozpracovaný do detailu, materiály a svetlo sú potvrdené." },
       { "title": "Realizácia",  "body": "Povolenia, výberové konanie a dohľad na stavbe s našimi overenými remeselníkmi." },
