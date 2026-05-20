@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+
 export default function Footer() {
+  const { t } = useTranslation('common')
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
   return (
@@ -6,15 +10,11 @@ export default function Footer() {
       <div className="footer__inner">
         <div className="footer__brand">
           <p className="footer__logo">ALRIH<span className="footer__dot">.</span></p>
-          <p className="footer__tagline">
-            Independent architecture studio. Residential,
-            cultural and small commercial work across
-            Slovakia and Central Europe.
-          </p>
+          <p className="footer__tagline">{t('footer.tagline')}</p>
         </div>
 
         <div className="footer__col">
-          <p className="footer__col-label">Studio</p>
+          <p className="footer__col-label">{t('footer.studioLabel')}</p>
           <ul className="footer__col-list">
             <li>Štúrova 14</li>
             <li>811 02 Bratislava</li>
@@ -23,17 +23,17 @@ export default function Footer() {
         </div>
 
         <div className="footer__col">
-          <p className="footer__col-label">Navigation</p>
+          <p className="footer__col-label">{t('footer.navLabel')}</p>
           <ul className="footer__col-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/">{t('nav.home')}</Link></li>
+            <li><Link to="/projects">{t('nav.projects')}</Link></li>
+            <li><Link to="/about">{t('nav.about')}</Link></li>
+            <li><Link to="/contact">{t('nav.contact')}</Link></li>
           </ul>
         </div>
 
         <div className="footer__col">
-          <p className="footer__col-label">Follow</p>
+          <p className="footer__col-label">{t('footer.followLabel')}</p>
           <ul className="footer__col-list">
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
@@ -43,9 +43,9 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p className="footer__copy">© 2026 Alrih Studio. All rights reserved.</p>
+        <p className="footer__copy">{t('footer.copyright')}</p>
         <button className="footer__back-top" onClick={scrollToTop}>
-          Back to top
+          {t('footer.backToTop')}
           <span className="footer__back-top-icon">&#8593;</span>
         </button>
       </div>

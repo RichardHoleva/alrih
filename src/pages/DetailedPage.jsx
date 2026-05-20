@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
@@ -6,6 +7,7 @@ import { PROJECTS } from '../data/projects'
 
 export default function DetailedPage() {
   const { id } = useParams()
+  const { t } = useTranslation('detailed')
   const project = PROJECTS.find(p => p.id === Number(id))
 
   if (!project) {
@@ -13,8 +15,8 @@ export default function DetailedPage() {
       <>
         <Navbar />
         <div className="detail-notfound">
-          <h2>Project not found</h2>
-          <Link to="/projects">← Back to projects</Link>
+          <h2>{t('notFound.heading')}</h2>
+          <Link to="/projects">{t('notFound.back')}</Link>
         </div>
         <Footer />
       </>
@@ -35,7 +37,7 @@ export default function DetailedPage() {
         <img src={project.heroImage} alt={project.title} className="detail-hero__img" />
         <div className="detail-hero__bar">
           <span className="detail-hero__label">N°{project.number} — {project.title.toUpperCase()}</span>
-          <span className="detail-hero__scroll">SCROLL TO EXPLORE →</span>
+          <span className="detail-hero__scroll">{t('scroll')}</span>
         </div>
       </section>
 
@@ -43,7 +45,7 @@ export default function DetailedPage() {
       <section className="detail-intro">
         <div className="detail-intro__inner">
           <div className="detail-intro__left">
-            <Link to="/projects" className="detail-intro__back">← Project</Link>
+            <Link to="/projects" className="detail-intro__back">{t('back')}</Link>
             <h1 className="detail-intro__title">
               {project.title.split(' ').map((word, i, arr) =>
                 i === arr.length - 1
@@ -55,19 +57,19 @@ export default function DetailedPage() {
           </div>
           <div className="detail-intro__meta">
             <div className="detail-intro__meta-item">
-              <p className="detail-intro__meta-label">Year</p>
+              <p className="detail-intro__meta-label">{t('meta.year')}</p>
               <p className="detail-intro__meta-value">{project.year}</p>
             </div>
             <div className="detail-intro__meta-item">
-              <p className="detail-intro__meta-label">Location</p>
+              <p className="detail-intro__meta-label">{t('meta.location')}</p>
               <p className="detail-intro__meta-value">{project.location}</p>
             </div>
             <div className="detail-intro__meta-item">
-              <p className="detail-intro__meta-label">Area</p>
+              <p className="detail-intro__meta-label">{t('meta.area')}</p>
               <p className="detail-intro__meta-value">{project.area}</p>
             </div>
             <div className="detail-intro__meta-item">
-              <p className="detail-intro__meta-label">Client</p>
+              <p className="detail-intro__meta-label">{t('meta.client')}</p>
               <p className="detail-intro__meta-value">{project.client}</p>
             </div>
           </div>
@@ -78,8 +80,8 @@ export default function DetailedPage() {
       <section className="detail-gallery">
         <div className="detail-gallery__inner">
           <Reveal>
-            <p className="detail-gallery__label">Project Gallery</p>
-            <h2 className="detail-gallery__heading">From <em>every</em> angle</h2>
+            <p className="detail-gallery__label">{t('gallery.label')}</p>
+            <h2 className="detail-gallery__heading">{t('gallery.headingPre')} <em>{t('gallery.headingEm')}</em> {t('gallery.headingSuf')}</h2>
           </Reveal>
           <Reveal delay={80}>
             <div className="detail-gallery__top-row">
@@ -115,7 +117,7 @@ export default function DetailedPage() {
         <div className="detail-about__inner">
           <Reveal>
             <div className="detail-about__left">
-              <p className="detail-about__label">About the project</p>
+              <p className="detail-about__label">{t('about.label')}</p>
               <h2 className="detail-about__heading">{project.aboutHeading}</h2>
             </div>
           </Reveal>
@@ -153,7 +155,7 @@ export default function DetailedPage() {
         <div className="detail-next__inner">
           <Reveal>
             <div className="detail-next__left">
-              <p className="detail-next__label">— Next Project · {nextNumStr}/{totalStr}</p>
+              <p className="detail-next__label">{t('next.label')} · {nextNumStr}/{totalStr}</p>
               <h2 className="detail-next__title">
                 {nextProject.title.split(' ').map((word, i, arr) =>
                   i === arr.length - 1
@@ -165,8 +167,8 @@ export default function DetailedPage() {
                 {nextProject.category} · {nextProject.year} · {nextProject.location}
               </p>
               <div className="detail-next__actions">
-                <Link to={`/projects/${nextProject.id}`} className="detail-next__btn">View Project →</Link>
-                <Link to="/projects" className="detail-next__all">← All Projects</Link>
+                <Link to={`/projects/${nextProject.id}`} className="detail-next__btn">{t('next.viewBtn')}</Link>
+                <Link to="/projects" className="detail-next__all">{t('next.allBtn')}</Link>
               </div>
             </div>
           </Reveal>
@@ -182,13 +184,10 @@ export default function DetailedPage() {
       <section className="detail-cta">
         <Reveal>
           <div className="detail-cta__inner">
-            <p className="detail-cta__label">Let's Work Together</p>
-            <h2 className="detail-cta__heading">Ready to start your <em>own</em> project?</h2>
-            <p className="detail-cta__body">
-              Tell us about the site, the brief or the dream — even if it's only a sketch
-              on the back of a napkin. We reply within two working days.
-            </p>
-            <Link to="/contact" className="detail-cta__btn">Contact the Studio →</Link>
+            <p className="detail-cta__label">{t('cta.label')}</p>
+            <h2 className="detail-cta__heading">{t('cta.headingPre')} <em>{t('cta.headingEm')}</em> {t('cta.headingSuf')}</h2>
+            <p className="detail-cta__body">{t('cta.body')}</p>
+            <Link to="/contact" className="detail-cta__btn">{t('cta.btn')}</Link>
           </div>
         </Reveal>
       </section>

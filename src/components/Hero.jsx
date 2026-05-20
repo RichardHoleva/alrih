@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import heroImg from "/ALRICH/images/Main_hero_image.png"
 
 export default function Hero() {
+  const { t } = useTranslation('common')
   const imageRef = useRef(null)
   const textRef = useRef(null)
 
@@ -18,9 +20,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero__overlay" ref={textRef}>
-        <h1 className="hero__heading">
-          Spaces designed <em>to live</em> well in
-        </h1>
+        <h1 className="hero__heading">{t('hero.heading')}</h1>
       </div>
       <div className="hero__image-wrap" ref={imageRef}>
         <img src={heroImg} alt="ALRIH architecture project" className="hero__image" />

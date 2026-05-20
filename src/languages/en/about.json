@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "label": "About the studio",
+    "headingPre": "A small",
+    "headingEm1": "team",
+    "headingMid": "with",
+    "headingEm2": "careful",
+    "headingSuf": "eye.",
+    "body": "Alrih is a small architectural and interior design studio based in Slovakia. We work closely with our clients from the first sketch to the final handover, combining technical precision with a genuine care for how spaces feel to live in."
+  },
+  "team": {
+    "label": "The team",
+    "headingPre": "A",
+    "headingEm1": "father",
+    "headingMid": "and",
+    "headingEm2": "daughter",
+    "headingSuf": "studio",
+    "sub": "Behind Alrih are two people who bring different but complementary skills to every project. One with a background in architecture and construction, the other in interior design and 3D visualisation. Together they cover the full process.",
+    "miroslav": {
+      "role": "Founder · Architect",
+      "bio": "Miroslav is the founding architect of Alrih with years of experience in residential and public building design. He manages the technical side of every project, from planning and permits to construction oversight, making sure every design is not just beautiful but buildable."
+    },
+    "nina": {
+      "role": "Partner · Interior Designer",
+      "bio": "Nina leads the interior design and 3D visualisation work at Alrih. She transforms spaces through thoughtful material choices, light and detail, and gives clients a clear picture of their future home before a single wall is built."
+    }
+  },
+  "story": {
+    "label": "Our story",
+    "headingPre": "Founded in",
+    "headingEm1": "2018",
+    "headingMid": "on the simple idea that good design makes everyday",
+    "headingEm2": "life better.",
+    "body1": "Alrih was founded on the belief that good design should be accessible, honest and built to last.",
+    "body2": "We are not a large agency. We take on a small number of projects each year so we can give every client the attention their home deserves.",
+    "body3": "Every project starts with listening and ends with a space that feels exactly right."
+  },
+  "process": {
+    "label": "How we work",
+    "headingEm": "Our",
+    "headingText": "process",
+    "steps": [
+      { "step": "Step one",   "title": "Brief & listening",   "body": "We meet on site and talk through your vision, budget and timeline. No assumptions, just questions." },
+      { "step": "Step two",   "title": "Concept & sketching", "body": "We develop two or three directions based on what we heard and come back for honest feedback." },
+      { "step": "Step three", "title": "Design development",  "body": "The chosen direction is developed in full detail. Materials, light and layout are finalised together." },
+      { "step": "Step four",  "title": "Build & oversight",   "body": "We work alongside trusted contractors and visit the site regularly to make sure everything is built as designed." },
+      { "step": "Step five",  "title": "Handover & care",     "body": "We do a final walkthrough, document everything and make sure you feel confident in your new space." }
+    ]
+  }
+}

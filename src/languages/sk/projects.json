@@ -1,0 +1,14 @@
+{
+  "header": {
+    "label": "Portfólio",
+    "headingPre": "Vybrané",
+    "headingEm": "projekty",
+    "body": "Desaťročie domov, interiérov a malých verejných stavieb — kreslených pomaly, realizovaných starostlivo a navrhnutých tak, aby dobre starli. Filtrujte podľa typológie alebo prezrite celý archív."
+  },
+  "tabs": {
+    "all": "Všetky",
+    "residential": "Rezidenčné",
+    "interior": "Interiér",
+    "public": "Verejné"
+  }
+}

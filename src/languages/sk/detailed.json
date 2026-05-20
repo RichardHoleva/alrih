@@ -1,0 +1,36 @@
+{
+  "scroll": "SCROLLUJTE NA PRESKÚMANIE →",
+  "back": "← Projekt",
+  "meta": {
+    "year": "Rok",
+    "location": "Lokalita",
+    "area": "Plocha",
+    "client": "Klient"
+  },
+  "gallery": {
+    "label": "Galéria projektu",
+    "headingPre": "Z",
+    "headingEm": "každého",
+    "headingSuf": "uhla"
+  },
+  "about": {
+    "label": "O projekte"
+  },
+  "next": {
+    "label": "— Ďalší projekt",
+    "viewBtn": "Zobraziť projekt →",
+    "allBtn": "← Všetky projekty"
+  },
+  "cta": {
+    "label": "Spolupracujme",
+    "headingPre": "Pripravení začať vlastný",
+    "headingEm": "projekt",
+    "headingSuf": "?",
+    "body": "Povedzte nám o pozemku, briefe alebo sne — aj keby šlo len o skicu na obrúsku. Odpovedáme do dvoch pracovných dní.",
+    "btn": "Kontaktujte štúdio →"
+  },
+  "notFound": {
+    "heading": "Projekt nenájdený",
+    "back": "← Späť na projekty"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "header": {
+    "label": "Portfolio",
+    "headingPre": "Selected",
+    "headingEm": "projects",
+    "body": "A decade of houses, interiors and small public buildings drawn slowly, built carefully, and intended to age well. Filter by typology or scroll through the full archive."
+  },
+  "tabs": {
+    "all": "All",
+    "residential": "Residential",
+    "interior": "Interior",
+    "public": "Public"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "about": {
+    "label": "Kto sme",
+    "headingPre": "Malé",
+    "headingEm1": "štúdio",
+    "headingMid": "s citlivým okom pre proporcie, svetlo a",
+    "headingEm2": "materiál",
+    "body1": "Alrih je nezávislá architektonická prax so sídlom v Bratislave, pôsobiaca v oblasti rezidenčných, kultúrnych a malých komerčných projektov. Každá zákazka začína dlhým rozhovorom o tom, ako sa miesto využíva, kde padá svetlo a čo zostane, keď sa usadí ruch.",
+    "body2": "Pracujeme pomaly, s malým tímom a okruhom overených remeselníkov. Výsledkom je tichá, trvanlivá architektúra stvorená na to, aby sa v nej desaťročia žilo, nie aby bola raz odfotografovaná."
+  },
+  "featured": {
+    "label": "Vybrané práce",
+    "headingPre": "Vybrané",
+    "headingEm": "Projekty",
+    "viewAll": "Zobraziť všetky →"
+  },
+  "services": {
+    "label": "Čo robíme",
+    "heading": "Služby",
+    "sub": "Tri oblasti praxe, každá riešená interne od prvej skice po posledný detail. Každý rok preberáme malý počet projektov, aby sa pozornosť nestratila.",
+    "arch": {
+      "title": "Architektúra",
+      "desc": "Novostavby, prístavby a rekonštrukcie. Od konceptu po stavebný dozor, s výkresmi a jasnou, realizovateľnou sadou detailov."
+    },
+    "interior": {
+      "title": "Interiérový dizajn",
+      "desc": "Priestorové plánovanie, stolárstvo, svietidlá a výber materiálov koordinované s architektúrou tak, aby vnútorné a vonkajšie prostredie hovorili o jednom projekte."
+    },
+    "viz": {
+      "title": "3D Vizualizácie",
+      "desc": "Fotorealistické rendery a virtuálne prehliadky vytvorené z našich pracovných modelov — užitočné pri rozhodovaní klientov aj pri podaniach na stavebný úrad."
+    }
+  },
+  "process": {
+    "label": "Ako pracujeme",
+    "headingEm": "Náš",
+    "headingText": "Proces",
+    "steps": [
+      { "title": "Brief",       "body": "Dlhé prvé stretnutie na mieste alebo pri káve. Program, rozpočet, obmedzenia." },
+      { "title": "Koncept",     "body": "Dva alebo tri smery, v pôdoryse a reze, predložené na úprimnú spätnú väzbu." },
+      { "title": "Dizajn",      "body": "Zvolený smer je rozpracovaný do detailu, materiály a svetlo sú potvrdené." },
+      { "title": "Realizácia",  "body": "Povolenia, výberové konanie a dohľad na stavbe s našimi overenými remeselníkmi." },
+      { "title": "Odovzdanie",  "body": "Záverečná prehliadka, finálne fotografie a krátky manuál pre budúci život stavby." }
+    ]
+  },
+  "reviews": {
+    "label": "Hodnotenia klientov",
+    "headingStrong1": "Čo",
+    "headingEm": "hovoria",
+    "headingStrong2": "klienti"
+  }
+}

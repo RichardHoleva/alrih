@@ -1,0 +1,41 @@
+{
+  "page": {
+    "label": "GET IN TOUCH",
+    "headingPre": "Tell us",
+    "headingEm1": "about",
+    "headingMid": "your",
+    "headingEm2": "project.",
+    "body": "Whether you are planning a new home or renovating an existing space, we would love to hear from you. Fill in the form and we will get back to you within two working days."
+  },
+  "form": {
+    "nameLbl": "NAME *",
+    "namePlh": "Name",
+    "emailLbl": "E-MAIL *",
+    "emailPlh": "E-MAIL",
+    "serviceLbl": "SELECT SERVICE *",
+    "servicePlh": "–Select a service–",
+    "serviceArch": "Architecture",
+    "serviceInterior": "Interior Design",
+    "serviceConsult": "Consultation",
+    "budgetLbl": "BUDGET RANGE",
+    "budgets": ["Under €5,000", "€5,000 – €10,000", "€10,000 – €20,000", "€20,000 +"],
+    "msgLbl": "MESSAGE *",
+    "msgPlh": "Tell us a little about your project...",
+    "privacyPre": "I agree to the",
+    "privacyLink": "privacy policy",
+    "privacySuf": "and consent to be contacted by Alrih Studio about my enquiry.",
+    "submit": "SEND MESSAGE →",
+    "altPre": "Or email us directly at"
+  },
+  "sidebar": {
+    "studioLbl": "STUDIO",
+    "studioName": "Alrih Studio s.r.o.",
+    "studioCountry": "Slovakia",
+    "emailLbl": "EMAIL",
+    "phoneLbl": "PHONE",
+    "hoursLbl": "STUDIO HOURS",
+    "hoursLine1": "Mon – Fri · 09:00 – 18:00",
+    "hoursLine2": "Visits by appointment only",
+    "findLbl": "FIND US"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Independent architecture studio. Residential, cultural and small commercial work across Slovakia and Central Europe.",
+    "studioLabel": "Studio",
+    "navLabel": "Navigation",
+    "followLabel": "Follow",
+    "backToTop": "Back to top",
+    "copyright": "© 2026 Alrih Studio. All rights reserved."
+  },
+  "hero": {
+    "heading": "Spaces designed to live well in"
+  },
+  "success": {
+    "title": "Success",
+    "body": "Your message was sent to us, we will get back to you as soon as we can."
+  }
+}

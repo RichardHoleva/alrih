@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Domov",
+    "projects": "Projekty",
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "tagline": "Nezávislé architektonické štúdio. Rezidenčné, kultúrne a komerčné projekty po celom Slovensku a v strednej Európe.",
+    "studioLabel": "Štúdio",
+    "navLabel": "Navigácia",
+    "followLabel": "Sledujte nás",
+    "backToTop": "Späť hore",
+    "copyright": "© 2026 Alrih Studio. Všetky práva vyhradené."
+  },
+  "hero": {
+    "heading": "Priestory navrhnuté pre dobrý život"
+  },
+  "success": {
+    "title": "Úspech",
+    "body": "Vaša správa bola odoslaná, ozveme sa vám čo najskôr."
+  }
+}

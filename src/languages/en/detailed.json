@@ -1,0 +1,36 @@
+{
+  "scroll": "SCROLL TO EXPLORE →",
+  "back": "← Project",
+  "meta": {
+    "year": "Year",
+    "location": "Location",
+    "area": "Area",
+    "client": "Client"
+  },
+  "gallery": {
+    "label": "Project Gallery",
+    "headingPre": "From",
+    "headingEm": "every",
+    "headingSuf": "angle"
+  },
+  "about": {
+    "label": "About the project"
+  },
+  "next": {
+    "label": "— Next Project",
+    "viewBtn": "View Project →",
+    "allBtn": "← All Projects"
+  },
+  "cta": {
+    "label": "Let's Work Together",
+    "headingPre": "Ready to start your",
+    "headingEm": "own",
+    "headingSuf": "project?",
+    "body": "Tell us about the site, the brief or the dream — even if it's only a sketch on the back of a napkin. We reply within two working days.",
+    "btn": "Contact the Studio →"
+  },
+  "notFound": {
+    "heading": "Project not found",
+    "back": "← Back to projects"
+  }
+}

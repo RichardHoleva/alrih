@@ -1,9 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import heroImg from '/ALRICH/images/Main_hero_image.png'
 
 export default function AboutPage() {
+  const { t } = useTranslation('about')
+  const processSteps = t('process.steps', { returnObjects: true })
+
   return (
     <>
       <Navbar />
@@ -12,15 +16,11 @@ export default function AboutPage() {
       <section className="about-intro">
         <Reveal>
           <div className="about-intro__inner">
-            <p className="about-intro__label">About the studio</p>
+            <p className="about-intro__label">{t('intro.label')}</p>
             <h1 className="about-intro__heading">
-              A small <em>team</em> with <em>careful</em> eye.
+              {t('intro.headingPre')} <em>{t('intro.headingEm1')}</em> {t('intro.headingMid')} <em>{t('intro.headingEm2')}</em> {t('intro.headingSuf')}
             </h1>
-            <p className="about-intro__body">
-              Alrih is a small architectural and interior design studio based in Slovakia.
-              We work closely with our clients from the first sketch to the final handover,
-              combining technical precision with a genuine care for how spaces feel to live in.
-            </p>
+            <p className="about-intro__body">{t('intro.body')}</p>
           </div>
         </Reveal>
       </section>
@@ -30,16 +30,11 @@ export default function AboutPage() {
         <div className="about-team__inner">
           <Reveal>
             <div className="about-team__header">
-              <p className="about-team__label">The team</p>
+              <p className="about-team__label">{t('team.label')}</p>
               <h2 className="about-team__heading">
-                A <em>father</em> and <em>daughter</em> studio
+                {t('team.headingPre')} <em>{t('team.headingEm1')}</em> {t('team.headingMid')} <em>{t('team.headingEm2')}</em> {t('team.headingSuf')}
               </h2>
-              <p className="about-team__sub">
-                Behind Alrih are two people who bring different but complementary
-                skills to every project. One with a background in architecture and
-                construction, the other in interior design and 3D visualisation.
-                Together they cover the full process.
-              </p>
+              <p className="about-team__sub">{t('team.sub')}</p>
             </div>
           </Reveal>
           <div className="about-team__grid">
@@ -48,14 +43,9 @@ export default function AboutPage() {
                 <div className="team-card__photo-wrap">
                   <img src={heroImg} alt="Miroslav Cavo" className="team-card__photo" />
                 </div>
-                <p className="team-card__role">Founder · Architect</p>
+                <p className="team-card__role">{t('team.miroslav.role')}</p>
                 <h3 className="team-card__name">Miroslav Cavo</h3>
-                <p className="team-card__bio">
-                  Miroslav is the founding architect of Alrih with years of experience
-                  in residential and public building design. He manages the technical side
-                  of every project, from planning and permits to construction oversight,
-                  making sure every design is not just beautiful but buildable.
-                </p>
+                <p className="team-card__bio">{t('team.miroslav.bio')}</p>
               </div>
             </Reveal>
             <Reveal delay={150}>
@@ -63,14 +53,9 @@ export default function AboutPage() {
                 <div className="team-card__photo-wrap">
                   <img src={heroImg} alt="Nina Cavo" className="team-card__photo" />
                 </div>
-                <p className="team-card__role">Partner · Interior Designer</p>
+                <p className="team-card__role">{t('team.nina.role')}</p>
                 <h3 className="team-card__name">Nina Cavo</h3>
-                <p className="team-card__bio">
-                  Nina leads the interior design and 3D visualisation work at Alrih.
-                  She transforms spaces through thoughtful material choices, light and
-                  detail, and gives clients a clear picture of their future home before
-                  a single wall is built.
-                </p>
+                <p className="team-card__bio">{t('team.nina.bio')}</p>
               </div>
             </Reveal>
           </div>
@@ -82,27 +67,17 @@ export default function AboutPage() {
         <div className="about-story__inner">
           <Reveal>
             <div className="about-story__left">
-              <p className="about-story__label">Our story</p>
+              <p className="about-story__label">{t('story.label')}</p>
               <h2 className="about-story__heading">
-                Founded in <em>2018</em> on the simple idea that good design
-                makes everyday <em>life better.</em>
+                {t('story.headingPre')} <em>{t('story.headingEm1')}</em> {t('story.headingMid')} <em>{t('story.headingEm2')}</em>
               </h2>
             </div>
           </Reveal>
           <Reveal delay={150}>
             <div className="about-story__right">
-              <p className="about-story__body">
-                Alrih was founded on the belief that good design should be
-                accessible, honest and built to last.
-              </p>
-              <p className="about-story__body">
-                We are not a large agency. We take on a small number of projects
-                each year so we can give every client the attention their home deserves.
-              </p>
-              <p className="about-story__body">
-                Every project starts with listening and ends with a space that feels
-                exactly right.
-              </p>
+              <p className="about-story__body">{t('story.body1')}</p>
+              <p className="about-story__body">{t('story.body2')}</p>
+              <p className="about-story__body">{t('story.body3')}</p>
             </div>
           </Reveal>
         </div>
@@ -113,21 +88,15 @@ export default function AboutPage() {
         <div className="about-process__inner">
           <Reveal>
             <div className="about-process__header">
-              <p className="about-process__label">How we work</p>
-              <h2 className="about-process__heading"><em>Our</em> process</h2>
+              <p className="about-process__label">{t('process.label')}</p>
+              <h2 className="about-process__heading"><em>{t('process.headingEm')}</em> {t('process.headingText')}</h2>
             </div>
           </Reveal>
           <div className="about-process__list">
-            {[
-              { n: '01', step: 'Step one',   title: 'Brief & listening',     body: 'We meet on site and talk through your vision, budget and timeline. No assumptions, just questions.' },
-              { n: '02', step: 'Step two',   title: 'Concept & sketching',   body: 'We develop two or three directions based on what we heard and come back for honest feedback.' },
-              { n: '03', step: 'Step three', title: 'Design development',    body: 'The chosen direction is developed in full detail. Materials, light and layout are finalised together.' },
-              { n: '04', step: 'Step four',  title: 'Build & oversight',     body: 'We work alongside trusted contractors and visit the site regularly to make sure everything is built as designed.' },
-              { n: '05', step: 'Step five',  title: 'Handover & care',       body: 'We do a final walkthrough, document everything and make sure you feel confident in your new space.' },
-            ].map((s, i) => (
-              <Reveal key={s.n} delay={i * 80}>
+            {processSteps.map((s, i) => (
+              <Reveal key={i} delay={i * 80}>
                 <div className="about-process__row">
-                  <span className="about-process__num">{s.n}</span>
+                  <span className="about-process__num">{String(i + 1).padStart(2, '0')}</span>
                   <div className="about-process__meta">
                     <p className="about-process__step">{s.step}</p>
                     <h3 className="about-process__title">{s.title}</h3>

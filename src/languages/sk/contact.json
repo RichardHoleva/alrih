@@ -1,0 +1,41 @@
+{
+  "page": {
+    "label": "KONTAKTUJTE NÁS",
+    "headingPre": "Povedzte nám",
+    "headingEm1": "o",
+    "headingMid": "svojom",
+    "headingEm2": "projekte.",
+    "body": "Či plánujete nový dom alebo rekonštrukciu existujúceho priestoru, radi sa s vami porozprávame. Vyplňte formulár a ozveme sa vám do dvoch pracovných dní."
+  },
+  "form": {
+    "nameLbl": "MENO *",
+    "namePlh": "Meno",
+    "emailLbl": "E-MAIL *",
+    "emailPlh": "E-MAIL",
+    "serviceLbl": "VYBERTE SLUŽBU *",
+    "servicePlh": "–Vyberte službu–",
+    "serviceArch": "Architektúra",
+    "serviceInterior": "Interiérový dizajn",
+    "serviceConsult": "Konzultácia",
+    "budgetLbl": "ROZPOČET",
+    "budgets": ["Do €5 000", "€5 000 – €10 000", "€10 000 – €20 000", "€20 000 +"],
+    "msgLbl": "SPRÁVA *",
+    "msgPlh": "Povedzte nám niečo o svojom projekte...",
+    "privacyPre": "Súhlasím so",
+    "privacyLink": "zásadami ochrany osobných údajov",
+    "privacySuf": "a súhlasím s kontaktovaním zo strany Alrih Studio v súvislosti s mojou požiadavkou.",
+    "submit": "ODOSLAŤ SPRÁVU →",
+    "altPre": "Alebo nám napíšte priamo na"
+  },
+  "sidebar": {
+    "studioLbl": "ŠTÚDIO",
+    "studioName": "Alrih Studio s.r.o.",
+    "studioCountry": "Slovensko",
+    "emailLbl": "EMAIL",
+    "phoneLbl": "TELEFÓN",
+    "hoursLbl": "OTVÁRACIE HODINY",
+    "hoursLine1": "Po – Pi · 09:00 – 18:00",
+    "hoursLine2": "Návštevy len po dohode",
+    "findLbl": "NÁJDITE NÁS"
+  }
+}

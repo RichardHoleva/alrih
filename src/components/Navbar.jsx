@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
-const navLinks = [
-  { label: 'Home',     href: '/' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'About',    href: '/about' },
-  { label: 'Contact',  href: '/contact' },
+const NAV_KEYS = [
+  { key: 'home',     href: '/' },
+  { key: 'projects', href: '/projects' },
+  { key: 'about',    href: '/about' },
+  { key: 'contact',  href: '/contact' },
 ]
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation('common')
   const [menuOpen, setMenuOpen] = useState(false)
-  const [lang,     setLang]     = useState('EN')
   const location = useLocation()
 
   return (
@@ -20,14 +21,14 @@ export default function Navbar() {
         <Link to="/" className="navbar__logo">ALRIH<span className="navbar_logo_dot">.</span></Link>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
-          {navLinks.map((link) => (
-            <li key={link.label}>
+          {NAV_KEYS.map((link) => (
+            <li key={link.key}>
               <Link
                 to={link.href}
                 className={`navbar__link ${location.pathname === link.href ? 'navbar__link--active' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
-                {link.label}
+                {t(`nav.${link.key}`)}
               </Link>
             </li>
           ))}
@@ -36,15 +37,15 @@ export default function Navbar() {
         <div className="navbar__right">
           <div className="navbar__lang">
             <button
-              className={`navbar__lang-btn ${lang === 'SK' ? 'navbar__lang-btn--active' : ''}`}
-              onClick={() => setLang('SK')}
+              className={`navbar__lang-btn ${i18n.language === 'sk' ? 'navbar__lang-btn--active' : ''}`}
+              onClick={() => i18n.changeLanguage('sk')}
             >
               SK
             </button>
             <span className="navbar__lang-sep">/</span>
             <button
-              className={`navbar__lang-btn ${lang === 'EN' ? 'navbar__lang-btn--active' : ''}`}
-              onClick={() => setLang('EN')}
+              className={`navbar__lang-btn ${i18n.language === 'en' ? 'navbar__lang-btn--active' : ''}`}
+              onClick={() => i18n.changeLanguage('en')}
             >
               EN
             </button>

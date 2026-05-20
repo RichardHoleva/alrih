@@ -1,11 +1,18 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import ProjectCard from './ProjectCard'
 import Reveal from './Reveal'
 import { PROJECTS } from '../data/projects'
 
-const TABS = ['All', 'Residential', 'Interior', 'Public']
+const TABS = [
+  { value: 'All',         key: 'all' },
+  { value: 'Residential', key: 'residential' },
+  { value: 'Interior',    key: 'interior' },
+  { value: 'Public',      key: 'public' },
+]
 
 export default function ProjectFilter() {
+  const { t } = useTranslation('projects')
   const [active, setActive] = useState('All')
 
   const visible = active === 'All'
@@ -17,17 +24,17 @@ export default function ProjectFilter() {
 
       <div className="projects__tabs">
         {TABS.map(tab => {
-          const count = tab === 'All'
+          const count = tab.value === 'All'
             ? PROJECTS.length
-            : PROJECTS.filter(p => p.category === tab).length
+            : PROJECTS.filter(p => p.category === tab.value).length
 
           return (
             <button
-              key={tab}
-              className={`projects__tab ${active === tab ? 'projects__tab--active' : ''}`}
-              onClick={() => setActive(tab)}
+              key={tab.value}
+              className={`projects__tab ${active === tab.value ? 'projects__tab--active' : ''}`}
+              onClick={() => setActive(tab.value)}
             >
-              {tab.toUpperCase()} <span className="projects__tab-count">{count}</span>
+              {t(`tabs.${tab.key}`).toUpperCase()} <span className="projects__tab-count">{count}</span>
             </button>
           )
         })}
