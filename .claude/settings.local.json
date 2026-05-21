@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\ALRICH\\\\src\\\\components\\\\Hero\")",
-      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\ALRICH\\\\src\\\\pages\")"
-    ]
-  }
-}
