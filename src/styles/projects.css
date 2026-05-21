@@ -62,19 +62,11 @@
 }
 
 .projects__tab {
-  font-family: var(--font-body);
   font-size: 12px;
-  font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--text-main);
   border: 1.5px solid var(--border);
-  border-radius: 999px;
   padding: 8px 18px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .projects__tab:hover {

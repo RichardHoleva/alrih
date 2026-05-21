@@ -31,7 +31,7 @@ export default function ProjectFilter() {
           return (
             <button
               key={tab.value}
-              className={`projects__tab ${active === tab.value ? 'projects__tab--active' : ''}`}
+              className={`projects__tab btn ${active === tab.value ? 'projects__tab--active' : ''}`}
               onClick={() => setActive(tab.value)}
             >
               {t(`tabs.${tab.key}`).toUpperCase()} <span className="projects__tab-count">{count}</span>

@@ -81,7 +81,7 @@ export default function ContactForm() {
           </label>
 
           <div className="contact__submit-row">
-            <button type="submit" className="contact__btn">{t('form.submit')}</button>
+            <button type="submit" className="contact__btn btn btn--primary">{t('form.submit')}</button>
             <span className="contact__alt">{t('form.altPre')} <a href="mailto:alrih@alrih.studio">alrih@alrih.studio</a></span>
           </div>
 

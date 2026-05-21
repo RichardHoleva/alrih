@@ -161,7 +161,7 @@ export default function DetailedPage() {
                 {nextProject.category} · {nextProject.year} · {nextProject.location}
               </p>
               <div className="detail-next__actions">
-                <Link to={`/projects/${nextProject.id}`} className="detail-next__btn">{t('next.viewBtn')}</Link>
+                <Link to={`/projects/${nextProject.id}`} className="detail-next__btn btn btn--outline">{t('next.viewBtn')}</Link>
                 <Link to="/projects" className="detail-next__all">{t('next.allBtn')}</Link>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function DetailedPage() {
             <p className="detail-cta__label">{t('cta.label')}</p>
             <h2 className="detail-cta__heading">{t('cta.headingPre')} <em>{t('cta.headingEm')}</em> {t('cta.headingSuf')}</h2>
             <p className="detail-cta__body">{t('cta.body')}</p>
-            <Link to="/contact" className="detail-cta__btn">{t('cta.btn')}</Link>
+            <Link to="/contact" className="detail-cta__btn btn btn--primary">{t('cta.btn')}</Link>
           </div>
         </Reveal>
       </section>

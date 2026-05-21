@@ -50,7 +50,7 @@ export default function HomePage() {
                 <p className="featured__label">{t('featured.label')}</p>
                 <h2 className="featured__heading">{t('featured.headingPre')} <em>{t('featured.headingEm')}</em></h2>
               </div>
-              <Link to="/projects" className="featured__view-all">{t('featured.viewAll')}</Link>
+              <Link to="/projects" className="featured__view-all btn btn--outline">{t('featured.viewAll')}</Link>
             </div>
           </Reveal>
           <div className="featured__grid">

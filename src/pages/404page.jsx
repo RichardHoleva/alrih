@@ -15,7 +15,7 @@ export default function NotFoundPage() {
           The page you are looking for may have been moved or removed.<br />
           Let us take you back.
         </p>
-        <Link to="/" className="nf-btn">
+        <Link to="/" className="nf-btn btn btn--primary">
           BACK TO HOME <span className="nf-arrow">→</span>
         </Link>
       </main>
