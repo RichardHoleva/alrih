@@ -12,6 +12,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@sanity/client": "^7.22.0",
+    "@sanity/image-url": "^2.1.1",
     "i18next": "^26.2.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
