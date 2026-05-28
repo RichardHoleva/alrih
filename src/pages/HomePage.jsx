@@ -1,22 +1,31 @@
-import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import ProjectCard from '../components/ProjectCard'
-import ServiceCard from '../components/ServiceCard'
-import ReviewCard from '../components/ReviewCard'
-import Reveal from '../components/Reveal'
-import Footer from '../components/Footer'
-import backImg from '/ALRICH/images/back.png'
-import SideImg from '/ALRICH/images/side_photo.png'
-import OpenKitchenImg from '/ALRICH/images/OpenKitchen.png'
-import homeicon from '/ALRICH/images/icons/mi_home.png'
-import interior from '/ALRICH/images/icons/Vector.png'
-import visualizationIcon from '/ALRICH/images/icons/cil_3d.png'
+import { Link }              from 'react-router-dom'
+import { useTranslation }    from 'react-i18next'
+import Navbar                from '../components/Navbar'
+import Hero                  from '../components/Hero'
+import ProjectCard            from '../components/ProjectCard'
+import ServiceCard            from '../components/ServiceCard'
+import ReviewCard             from '../components/ReviewCard'
+import Reveal                 from '../components/Reveal'
+import Footer                 from '../components/Footer'
+import { useSanityProjects }  from '../hooks/useSanityProjects'
+import { urlFor }             from '../lib/sanityClient'
+import homeicon              from '/ALRICH/images/icons/mi_home.png'
+import interior              from '/ALRICH/images/icons/Vector.png'
+import visualizationIcon     from '/ALRICH/images/icons/cil_3d.png'
 
 export default function HomePage() {
-  const { t } = useTranslation('home')
-  const processSteps = t('process.steps', { returnObjects: true })
+  const { t, i18n }           = useTranslation('home')
+  const processSteps          = t('process.steps', { returnObjects: true })
+  const { projects, loading } = useSanityProjects()
+  const sk                    = i18n.language === 'sk'
+
+  const featured = projects.slice(0, 3).map(p => ({
+    id:       p.slug,
+    title:    sk ? (p.titleSk || p.titleEn) : p.titleEn,
+    category: p.category,
+    year:     p.year,
+    image:    p.coverImage ? urlFor(p.coverImage).width(800).url() : null,
+  }))
 
   return (
     <>
@@ -54,15 +63,17 @@ export default function HomePage() {
             </div>
           </Reveal>
           <div className="featured__grid">
-            <Reveal delay={0}>
-              <ProjectCard id={1} category="Cottage" year="2023" title="Family Cottage" image={SideImg} />
-            </Reveal>
-            <Reveal delay={100}>
-              <ProjectCard id={4} category="Interior" year="2019" title="Open Interior" image={OpenKitchenImg} />
-            </Reveal>
-            <Reveal delay={200}>
-              <ProjectCard id={2} category="Residential" year="2024" title="Family House" image={backImg} />
-            </Reveal>
+            {!loading && featured.map((p, i) => (
+              <Reveal key={p.id} delay={i * 100}>
+                <ProjectCard
+                  id={p.id}
+                  category={p.category}
+                  year={p.year}
+                  title={p.title}
+                  image={p.image}
+                />
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

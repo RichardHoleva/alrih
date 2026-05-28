@@ -14,10 +14,8 @@ export const ALL_PROJECTS_QUERY = `
     "slug": slug.current,
     category,
     year,
-    coverImage {
-      alt,
-      asset
-    }
+    location,
+    coverImage { alt, asset }
   }
 `
 
